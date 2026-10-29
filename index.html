@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>CM Sayed Thahir &amp; Fathimathul Jazeelath — Royal Nikkah Ceremony | 29 November 2026</title>
+  <meta name="description" content="With the grace of Almighty Allah, you are cordially invited to celebrate the auspicious Nikkah ceremony of CM Sayed Thahir &amp; Fathimathul Jazeelath on Sunday, 29 November 2026 at SASA Resort, Taivalapp, Cherkala." />
+  <meta name="theme-color" content="#19020b" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>" />
+
+  <!-- Open Graph / WhatsApp / Facebook Rich Preview (1200x630 Large Card) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Royal Nikkah Invitation" />
+  <meta property="og:title" content="CM Sayed Thahir &amp; Fathimathul Jazeelath — Royal Nikkah Ceremony" />
+  <meta property="og:description" content="Sunday, 29 November 2026 · 11:30 AM · SASA Resort, Taivalapp, Cherkala. Tap to view the royal invitation &amp; ceremony details." />
+  <meta property="og:image" content="assets/og-thumbnail.jpg" />
+  <meta property="og:image:secure_url" content="assets/og-thumbnail.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Royal Nikkah Ceremony Invitation — CM Sayed Thahir &amp; Fathimathul Jazeelath" />
+
+  <!-- Twitter / Messaging Large Summary Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CM Sayed Thahir &amp; Fathimathul Jazeelath — Royal Nikkah Ceremony" />
+  <meta name="twitter:description" content="Sunday, 29 November 2026 · 11:30 AM · SASA Resort, Taivalapp, Cherkala. Tap to view the royal invitation &amp; ceremony details." />
+  <meta name="twitter:image" content="assets/og-thumbnail.jpg" />
+  <meta name="twitter:image:alt" content="Royal Nikkah Ceremony Invitation — CM Sayed Thahir &amp; Fathimathul Jazeelath" />
+
+  <link rel="image_src" href="assets/og-thumbnail.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ LIQUID AMBIENT BURGUNDY & GOLD CANVAS ═══════════════ -->
+  <div class="ambient-canvas"></div>
+  <div class="cursor-ambient-glow" id="cursorGlow"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- ═══════════════ TOAST NOTIFICATION ═══════════════ -->
+  <div class="toast-notice" id="toastNotice">Ceremony Melody Playing</div>
+
+  <!-- ═══════════════ PRELOADER (Burgundy & Gold Velvet Envelope) ═══════════════ -->
+  <div id="preloader">
+    <div class="preloader-card">
+      <div class="preloader-monogram">
+        <img src="assets/monogram.jpg" alt="J & T Monogram" />
+      </div>
+      <p class="preloader-badge">The Auspicious Nikkah Ceremony</p>
+      <p class="preloader-arabic">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+      <h2 class="preloader-names">CM Sayed Thahir<span>&amp;</span>Fathimathul Jazeelath</h2>
+      <p class="preloader-subtitle">Request the honour of your presence and heartfelt prayers</p>
+      <button class="preloader-open-btn" id="openBtn" aria-label="Open Royal Invitation">
+        <span>Enter Invitation</span>
+        <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:15px;height:15px;">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <span class="preloader-hint">29 · November · 2026 · Taivalapp, Cherkala</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Home">
+        <div class="nav-logo-monogram">
+          <img src="assets/monogram.jpg" alt="J&T" />
+        </div>
+        <span class="nav-logo-text">J &amp; T</span>
+      </a>
+
+      <!-- Mobile Menu Hamburger Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#invitation" class="nav-link">Invitation</a>
+        <a href="#verse" class="nav-link">Sacred Verse</a>
+        <a href="#couple" class="nav-link">The Couple</a>
+        <a href="#countdown" class="nav-link">Countdown</a>
+        <a href="#ceremony" class="nav-link">Ceremony</a>
+        <a href="#venue" class="nav-link">Venue</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ FLOATING MUSIC MEDALLION (NO TEXT) ═══════════════ -->
+  <button class="side-music-widget" id="sideMusicWidget" aria-label="Toggle Nikkah Melody" title="Play / Pause Ceremony Melody">
+    <div class="side-disc" id="sideDisc">
+      <svg class="side-disc-icon" id="sidePlayIconSvg" viewBox="0 0 24 24" fill="currentColor">
+        <polygon points="6 4 19 12 6 20 6 4"/>
+      </svg>
+    </div>
+    <div class="side-soundwave" id="sideSoundwave" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+  </button>
+
+  <!-- Nikkah Ceremony Audio (Woh Tum Ho ft. Hansika Pareek) -->
+  <audio id="weddingAudio" preload="auto" loop playsinline>
+    <source src="assets/woh_tum_ho.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ═══════════════ SECTION 1: HERO (FIRST PAGE EXPERIENCE WITH IMAGE & MINIMAL OVERLAY) ═══════════════ -->
+  <section class="hero-first-page" id="home">
+    <div class="hero-bg-layer">
+      <img src="assets/hero_bg.jpg" alt="Royal Islamic Wedding Palace with No People" id="heroBgImg" />
+      <div class="hero-vignette-overlay"></div>
+    </div>
+
+    <div class="hero-portal-content">
+      <!-- Monogram Halo -->
+      <div class="hero-monogram-halo">
+        <img src="assets/monogram.jpg" alt="J & T Royal Monogram Crest" />
+      </div>
+
+      <!-- Bismillah -->
+      <p class="hero-bismillah-portal">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+      <p class="hero-portal-eyebrow">✦ THE SACRED NIKKAH UNION ✦</p>
+
+      <!-- Main Title -->
+      <h1 class="hero-portal-title gold-shimmer">The Auspicious Nikkah Ceremony</h1>
+
+      <!-- Couple Names -->
+      <div class="hero-portal-names">
+        CM Sayed Thahir<span>&amp;</span>Fathimathul Jazeelath
+      </div>
+
+      <!-- Date Badge -->
+      <div class="hero-portal-badge">
+        <span>Sunday</span>
+        <span class="portal-dot">✦</span>
+        <span>29 November 2026</span>
+        <span class="portal-dot">✦</span>
+        <span>Taivalapp, Cherkala</span>
+      </div>
+
+      <!-- Interactive Scroll Cue -->
+      <a href="#invitation" class="hero-portal-scroll-cue" aria-label="Scroll to enter invitation">
+        <span>Scroll to Enter Invitation</span>
+        <div class="scroll-pill">
+          <div class="scroll-dot"></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <div class="hairline"></div>
+
+  <!-- ═══════════════ SECTION 2: INVITATION PROCLAMATION (APPEARS ON SCROLL) ═══════════════ -->
+  <section class="invitation-section" id="invitation">
+    <div class="invitation-card reveal">
+      <!-- Decorative Golden Corner Filigree -->
+      <div class="card-corner card-corner-tl" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor">
+          <path d="M2 38V12C2 6.477 6.477 2 12 2H38" stroke-width="1.2"/>
+          <path d="M8 38V16C8 11.582 11.582 8 16 8H38" stroke-width="0.8" opacity="0.6"/>
+          <circle cx="12" cy="12" r="2.5" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="card-corner card-corner-tr" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor">
+          <path d="M38 38V12C38 6.477 33.523 2 28 2H2" stroke-width="1.2"/>
+          <path d="M32 38V16C32 11.582 28.418 8 24 8H2" stroke-width="0.8" opacity="0.6"/>
+          <circle cx="28" cy="12" r="2.5" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="card-corner card-corner-bl" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor">
+          <path d="M2 2V28C2 33.523 6.477 38 12 38H38" stroke-width="1.2"/>
+          <path d="M8 2V24C8 28.418 11.582 32 16 32H38" stroke-width="0.8" opacity="0.6"/>
+          <circle cx="12" cy="28" r="2.5" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="card-corner card-corner-br" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor">
+          <path d="M38 2V28C38 33.523 33.523 38 28 38H2" stroke-width="1.2"/>
+          <path d="M32 2V24C32 28.418 28.418 32 24 32H2" stroke-width="0.8" opacity="0.6"/>
+          <circle cx="28" cy="28" r="2.5" fill="currentColor"/>
+        </svg>
+      </div>
+
+      <div class="invitation-crest">
+        <img src="assets/monogram.jpg" alt="J & T Crest" />
+      </div>
+
+      <p class="invitation-bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+      <p class="invitation-bismillah-en">In the name of Allah, the most beneficent, the most merciful</p>
+
+      <div class="invitation-eyebrow">
+        <span class="invite-ornament">✦</span>
+        <span>YOU ARE CORDIALLY INVITED</span>
+        <span class="invite-ornament">✦</span>
+      </div>
+
+      <h2 class="invitation-main-title gold-shimmer">The Auspicious Nikkah Ceremony</h2>
+
+      <p class="invitation-warm-msg">
+        We warmly invite you and your family to join us in celebrating the sacred union and blessed Nikkah ceremony of our beloved children. Your gracious presence and prayers will make this joyous occasion truly blessed.
+      </p>
+
+      <!-- Event Details Ribbon -->
+      <div class="invitation-event-ribbon">
+        <div class="ribbon-item">
+          <span class="ribbon-label">Auspicious Date</span>
+          <span class="ribbon-val">Sunday, 29 Nov 2026</span>
+        </div>
+        <div class="ribbon-sep">✦</div>
+        <div class="ribbon-item">
+          <span class="ribbon-label">Nikkah Ceremony</span>
+          <span class="ribbon-val">11:30 AM IST</span>
+        </div>
+        <div class="ribbon-sep">✦</div>
+        <div class="ribbon-item">
+          <span class="ribbon-label">Celebration Venue</span>
+          <span class="ribbon-val">SASA Resort, Taivalapp, Cherkala</span>
+        </div>
+      </div>
+
+      <p class="invitation-hijri">19 Jumada Al-Akhir Hijri 1448 · SASA Resort, Taivalapp, Cherkala, Kasaragod, Kerala</p>
+
+      <!-- Action Buttons -->
+      <div class="invitation-actions">
+        <a href="#couple" class="btn-primary">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:15px;height:15px;">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+          Meet The Couple ↓
+        </a>
+        <a href="#ceremony" class="btn-secondary">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:15px;height:15px;">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          Ceremony Details ↓
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="hairline"></div>
+
+  <!-- ═══════════════ SECTION 3: QURANIC VERSE INTERLUDE (SURAH AR-RUM 30:21) ═══════════════ -->
+  <section class="verse-section" id="verse">
+    <div class="verse-card reveal">
+      <div class="verse-card-bg">
+        <img src="assets/verse_bg.jpg" alt="Burgundy and Gold Arabesque Backdrop" />
+      </div>
+
+      <div class="verse-content">
+        <div class="verse-bismillah-badge">
+          ✦ آية من القرآن الكريم · Sacred Quranic Verse ✦
+        </div>
+
+        <p class="verse-arabic-calligraphy">
+          وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
+        </p>
+
+        <div class="verse-divider-ornament">
+          <span class="verse-divider-line"></span>
+          <span class="verse-divider-symbol">❋</span>
+          <span class="verse-divider-line"></span>
+        </div>
+
+        <p class="verse-english-translation">
+          &ldquo;And among His signs is that He created for you mates from among yourselves that you may dwell in tranquility with them, and He has put love and mercy between your hearts. Verily in that are signs for those who reflect.&rdquo;
+        </p>
+
+        <span class="verse-reference">— Surah Ar-Rum (30:21)</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="hairline"></div>
+
+  <!-- ═══════════════ SECTION 4: THE COUPLE (SEPARATE BRIDE & GROOM + RINGS KNOT) ═══════════════ -->
+  <section class="section" id="couple">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">العروسان المباركان · The Blessed Union</span>
+      <h2 class="section-title">The Groom &amp; The Bride</h2>
+      <p class="section-subtitle">United in love, guided by faith and sincere prayers</p>
+    </div>
+
+    <div class="couple-separate-grid reveal reveal-d1">
+      <!-- Groom Card -->
+      <div class="couple-person-card">
+        <div class="card-corner card-corner-tl" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor">
+            <path d="M2 38V12C2 6.477 6.477 2 12 2H38" stroke-width="1.2"/>
+            <circle cx="12" cy="12" r="2.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="card-corner card-corner-tr" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor">
+            <path d="M38 38V12C38 6.477 33.523 2 28 2H2" stroke-width="1.2"/>
+            <circle cx="28" cy="12" r="2.5" fill="currentColor"/>
+          </svg>
+        </div>
+
+        <div class="couple-card-inner">
+          <div class="couple-role-pill">
+            <span class="role-ornament">✦</span>
+            <span class="couple-role-tag">The Groom</span>
+            <span class="role-ornament">✦</span>
+          </div>
+
+          <div class="couple-name-box">
+            <h3 class="couple-name gold-shimmer">CM Sayed Thahir</h3>
+          </div>
+
+          <div class="couple-lineage-box">
+            <span class="couple-relation">Son of</span>
+            <p class="couple-parents">Mrs. &amp; Mr. Moosa Haji Chedekal</p>
+          </div>
+
+          <div class="couple-card-divider">
+            <span class="card-div-line"></span>
+            <span class="card-div-diamond">✦</span>
+            <span class="card-div-line"></span>
+          </div>
+
+          <div class="couple-residence-box">
+            <span class="residence-label">Residence</span>
+            <p class="couple-residence">Chedekal House<br>Kumbadaje</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center Union Intertwined Rings Medallion -->
+      <div class="couple-union-knot">
+        <div class="knot-line"></div>
+        <div class="rings-medallion" title="Two Souls, One Journey">
+          <img src="assets/rings.jpg" alt="Intertwined Royal Gold Wedding Rings" />
+        </div>
+        <div class="knot-line"></div>
+      </div>
+
+      <!-- Bride Card -->
+      <div class="couple-person-card">
+        <div class="card-corner card-corner-tl" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor">
+            <path d="M2 38V12C2 6.477 6.477 2 12 2H38" stroke-width="1.2"/>
+            <circle cx="12" cy="12" r="2.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="card-corner card-corner-tr" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor">
+            <path d="M38 38V12C38 6.477 33.523 2 28 2H2" stroke-width="1.2"/>
+            <circle cx="28" cy="12" r="2.5" fill="currentColor"/>
+          </svg>
+        </div>
+
+        <div class="couple-card-inner">
+          <div class="couple-role-pill">
+            <span class="role-ornament">✦</span>
+            <span class="couple-role-tag">The Bride</span>
+            <span class="role-ornament">✦</span>
+          </div>
+
+          <div class="couple-name-box">
+            <h3 class="couple-name gold-shimmer">Fathimathul Jazeelath</h3>
+          </div>
+
+          <div class="couple-lineage-box">
+            <span class="couple-relation">Daughter of</span>
+            <p class="couple-parents">Mrs. &amp; Mr. Abdul Khadar G.S. Sa-adi</p>
+          </div>
+
+          <div class="couple-card-divider">
+            <span class="card-div-line"></span>
+            <span class="card-div-diamond">✦</span>
+            <span class="card-div-line"></span>
+          </div>
+
+          <div class="couple-residence-box">
+            <span class="residence-label">Residence</span>
+            <p class="couple-residence">Mihraj Manzil, Bantrabailu<br>Ajjavara, Sullia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hairline"></div>
+
+  <!-- ═══════════════ SECTION 5: COUNTDOWN ═══════════════ -->
+  <section class="section" id="countdown">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">العد التنازلي للموعد الميمون · Save The Date</span>
+      <h2 class="section-title">Counting Down to the Auspicious Nikkah</h2>
+      <p class="section-subtitle">29 November 2026 · SASA Resort, Taivalapp, Cherkala</p>
+    </div>
+
+    <div class="countdown-wrapper reveal reveal-d1">
+      <div class="countdown-grid">
+        <div class="countdown-col">
+          <div class="countdown-num" id="cd-days">00</div>
+          <div class="countdown-unit">Days</div>
+        </div>
+        <div class="countdown-col">
+          <div class="countdown-num" id="cd-hours">00</div>
+          <div class="countdown-unit">Hours</div>
+        </div>
+        <div class="countdown-col">
+          <div class="countdown-num" id="cd-minutes">00</div>
+          <div class="countdown-unit">Minutes</div>
+        </div>
+        <div class="countdown-col">
+          <div class="countdown-num" id="cd-seconds">00</div>
+          <div class="countdown-unit">Seconds</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal-d2">
+      <span class="countdown-badge">Sunday · Nikkah at 11:30 AM IST</span>
+    </div>
+  </section>
+
+  <div class="hairline"></div>
+
+  <!-- ═══════════════ SECTION 6: CEREMONY DETAILS (NIKKAH CEREMONY) ═══════════════ -->
+  <section class="section" id="ceremony">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">العهد المقدس · Sacred Covenant</span>
+      <h2 class="section-title">The Auspicious Nikkah Ceremony</h2>
+      <p class="section-subtitle">We request the pleasure of your company and prayers</p>
+    </div>
+
+    <div class="details-card reveal reveal-d1">
+      <div class="details-emblem">
+        <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8A9.006 9.006 0 0 0 12 3z"/>
+          <polygon points="19 3 20 5.5 22.5 6.5 20 7.5 19 10 18 7.5 15.5 6.5 18 5.5 19 3" fill="currentColor"/>
+        </svg>
+      </div>
+
+      <h3 class="details-event-title">Nikkah Ceremony</h3>
+      <p class="details-event-sub">إن شاء الله — Insha Allah</p>
+
+      <div class="nikkah-dua-wrap">
+        <p class="nikkah-dua-ar">بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
+        <p class="nikkah-dua-en">&ldquo;May Allah bless you, shower His blessings upon you, and unite you both in goodness.&rdquo;</p>
+      </div>
+
+      <div class="details-grid">
+        <div class="details-row">
+          <div class="details-row-icon">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <div class="details-row-content">
+            <div class="details-row-label">Auspicious Date</div>
+            <div class="details-row-val">Sunday, 29th November 2026</div>
+          </div>
+        </div>
+
+        <div class="details-row">
+          <div class="details-row-icon">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div class="details-row-content">
+            <div class="details-row-label">Nikkah Ceremony Time</div>
+            <div class="details-row-val">11:30 AM IST</div>
+          </div>
+        </div>
+
+        <div class="details-row">
+          <div class="details-row-icon">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div class="details-row-content">
+            <div class="details-row-label">Ceremony Venue</div>
+            <div class="details-row-val">SASA Resort, Taivalapp, Cherkala</div>
+          </div>
+        </div>
+
+        <div class="details-row">
+          <div class="details-row-icon">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </div>
+          <div class="details-row-content">
+            <div class="details-row-label">Islamic Hijri Date</div>
+            <div class="details-row-val">19 Jumada Al-Akhir Hijri 1448</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hairline"></div>
+
+  <!-- ═══════════════ SECTION 7: VENUE & LOCATION ═══════════════ -->
+  <section class="section" id="venue">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">موقع الحفل المبارك · The Destination</span>
+      <h2 class="section-title">Where It All Happens</h2>
+      <p class="section-subtitle">SASA Resort, Taivalapp, Cherkala</p>
+    </div>
+
+    <div class="venue-card reveal reveal-d1">
+      <div class="venue-img-wrap">
+        <img src="assets/venue.jpg" alt="SASA Resort, Taivalapp, Cherkala" />
+        <div class="venue-img-overlay"></div>
+        <div class="venue-img-badge">SASA Resort, Taivalapp, Cherkala</div>
+      </div>
+
+      <div class="venue-content">
+        <div class="venue-tag">Ceremony Location</div>
+        <h3 class="venue-name">SASA Resort</h3>
+        <p class="venue-location">
+          Taivalapp, Cherkala<br>
+          Kasaragod, Kerala
+        </p>
+
+        <div class="venue-btns">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=SASA+Resort,+Taivalapp,+Cherkala" target="_blank" rel="noopener noreferrer" class="venue-map-btn">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" style="width:16px;height:16px;">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+            </svg>
+            Open in Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hairline"></div>
+
+  <!-- ═══════════════ SECTION 8: COMPLIMENTS & DUAS ═══════════════ -->
+  <section class="compliments-section reveal" id="compliments">
+    <div class="compliments-crest">
+      <img src="assets/monogram.jpg" alt="J & T Royal Monogram Crest" />
+    </div>
+    <div class="compliments-label">دعواتكم وفيض محبتكم · Honoring the Nikkah</div>
+    <h3 class="compliments-text gold-shimmer">With Best Compliments From</h3>
+    <p class="compliments-from">Relatives &amp; Friends</p>
+    
+    <!-- Holy Quranic Dua for Families (Surah Al-Furqan 25:74) -->
+    <p class="dua-arabic">
+      رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا
+    </p>
+
+    <p class="compliments-verse">
+      &ldquo;Our Lord, grant us from among our spouses and offspring comfort to our eyes and make us a leader for the righteous.&rdquo;
+    </p>
+    <span class="dua-ref">— Surah Al-Furqan (25:74)</span>
+  </section>
+
+
+
+  <div class="hairline"></div>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="footer-monogram">
+      <img src="assets/monogram.jpg" alt="J & T Monogram" />
+    </div>
+    <div class="footer-names">Nikkah of CM Sayed Thahir &amp; Fathimathul Jazeelath</div>
+    <div class="footer-date">29 · 11 · 2026 · Taivalapp, Cherkala, Kasaragod, Kerala</div>
+    <div class="footer-credit">Designed with Love &amp; Imperial Elegance</div>
+  </footer>
+
+
+
+  <!-- ═══════════════ JAVASCRIPT LOGIC ═══════════════ -->
+  <script>
+    /* ──────────────────────────────────────────
+       1. AUDIO ENGINE (Instant, Reliable, Cinematic Multi-Source Playback)
+       ────────────────────────────────────────── */
+    const weddingAudio = document.getElementById('weddingAudio');
+    const sidePlayIconSvg = document.getElementById('sidePlayIconSvg');
+    const sideDisc = document.getElementById('sideDisc');
+    const sideWidget = document.getElementById('sideMusicWidget');
+    const toast = document.getElementById('toastNotice');
+    let isPlaying = false;
+    let fadeInterval = null;
+
+    if (weddingAudio) {
+      try { weddingAudio.volume = 0.75; } catch (e) {}
+      weddingAudio.addEventListener('play', () => setMusicUIState(true));
+      weddingAudio.addEventListener('playing', () => setMusicUIState(true));
+      weddingAudio.addEventListener('pause', () => setMusicUIState(false));
+      weddingAudio.addEventListener('ended', () => setMusicUIState(false));
+      weddingAudio.addEventListener('error', (err) => {
+        console.warn('Audio element error:', err);
+        setMusicUIState(false);
+      });
+    }
+
+    function setMusicUIState(playing) {
+      isPlaying = playing;
+      if (playing) {
+        if (sidePlayIconSvg) {
+          sidePlayIconSvg.innerHTML = '<rect x="6" y="4" width="3.5" height="16" rx="1"/><rect x="14.5" y="4" width="3.5" height="16" rx="1"/>';
+        }
+        if (sideDisc) sideDisc.classList.add('spinning');
+        if (sideWidget) sideWidget.classList.add('playing');
+      } else {
+        if (sidePlayIconSvg) {
+          sidePlayIconSvg.innerHTML = '<polygon points="6 4 19 12 6 20 6 4"/>';
+        }
+        if (sideDisc) sideDisc.classList.remove('spinning');
+        if (sideWidget) sideWidget.classList.remove('playing');
+      }
+    }
+
+    function fadeInAudio() {
+      if (!weddingAudio) return;
+      try { weddingAudio.volume = 0.35; } catch (e) {}
+      const playPromise = weddingAudio.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          setMusicUIState(true);
+          try {
+            clearInterval(fadeInterval);
+            let vol = 0.35;
+            fadeInterval = setInterval(() => {
+              try {
+                if (vol < 0.75) {
+                  vol = Math.min(0.75, vol + 0.05);
+                  weddingAudio.volume = vol;
+                } else {
+                  clearInterval(fadeInterval);
+                }
+              } catch (err) {
+                clearInterval(fadeInterval);
+              }
+            }, 80);
+          } catch (e) {}
+        }).catch((err) => {
+          console.warn('Autoplay prevented or audio source error:', err);
+          setMusicUIState(false);
+        });
+      }
+    }
+
+    function toggleMusic() {
+      if (!weddingAudio) return;
+      if (isPlaying || !weddingAudio.paused) {
+        weddingAudio.pause();
+        setMusicUIState(false);
+        showToast('Ceremony Melody Paused');
+      } else {
+        try { weddingAudio.volume = 0.75; } catch (e) {}
+        const playPromise = weddingAudio.play();
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            setMusicUIState(true);
+            showToast('Ceremony Melody Playing');
+          }).catch((err) => {
+            console.warn('Playback error:', err);
+            setMusicUIState(false);
+          });
+        }
+      }
+    }
+
+    if (sideWidget) {
+      sideWidget.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleMusic();
+      });
+    }
+
+    /* ──────────────────────────────────────────
+       2. PRELOADER & INVITATION OPENING
+       ────────────────────────────────────────── */
+    const preloader = document.getElementById('preloader');
+    const openBtn = document.getElementById('openBtn');
+
+    function openInvitation() {
+      if (!preloader || preloader.classList.contains('hidden')) return;
+      preloader.classList.add('hidden');
+      document.body.style.overflow = '';
+      createParticles();
+      updateSectionMetrics();
+      fadeInAudio();
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openInvitation);
+    if (preloader) {
+      preloader.addEventListener('click', (e) => {
+        if (e.target === preloader || e.target.closest('.preloader-card')) openInvitation();
+      });
+    }
+    document.body.style.overflow = 'hidden';
+
+    /* ──────────────────────────────────────────
+       3. FLOATING GOLDEN PARTICLES (Performance Optimized)
+       ────────────────────────────────────────── */
+    function createParticles() {
+      const container = document.getElementById('particles');
+      if (!container || container.children.length > 0) return;
+      const isMobile = window.innerWidth < 768;
+      const count = isMobile ? 6 : 22;
+      const frag = document.createDocumentFragment();
+      for (let i = 0; i < count; i++) {
+        const p = document.createElement('div');
+        p.className = 'particle';
+        const size = 1.2 + Math.random() * (isMobile ? 1.5 : 2.5);
+        p.style.cssText = `
+          left: ${Math.random() * 100}%;
+          width: ${size}px;
+          height: ${size}px;
+          background: rgba(229, 195, 136, ${0.25 + Math.random() * 0.35});
+          --dur: ${12 + Math.random() * 12}s;
+          --delay: ${Math.random() * 6}s;
+          --opacity: ${0.25 + Math.random() * 0.35};
+        `;
+        frag.appendChild(p);
+      }
+      container.appendChild(frag);
+    }
+
+    /* ──────────────────────────────────────────
+       4. HERO PARALLAX (Smooth 3D Depth on Scroll, Desktop Only)
+       ────────────────────────────────────────── */
+    const heroBgImg = document.getElementById('heroBgImg');
+    let heroParallaxTicking = false;
+
+    window.addEventListener('scroll', () => {
+      // On mobile and touch screens, preserve 60Hz/120Hz native compositor momentum by bypassing JS DOM transforms
+      if (window.innerWidth < 768) return;
+      if (!heroParallaxTicking) {
+        window.requestAnimationFrame(() => {
+          const scrollY = window.pageYOffset;
+          if (heroBgImg && scrollY < window.innerHeight * 1.5) {
+            heroBgImg.style.transform = `translate3d(0, ${scrollY * 0.35}px, 0) scale(1.03)`;
+          }
+          heroParallaxTicking = false;
+        });
+        heroParallaxTicking = true;
+      }
+    }, { passive: true });
+
+    /* ──────────────────────────────────────────
+       5. SCROLL ENGINE & ACTIVE NAV LINK (Zero Layout Thrashing)
+       ────────────────────────────────────────── */
+    const navbar = document.getElementById('navbar');
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-link');
+    let sectionMetrics = [];
+    let isNavbarScrolled = false;
+    let currentActiveSection = '';
+    let scrollTicking = false;
+
+    function updateSectionMetrics() {
+      if (window.innerWidth < 768) return;
+      sectionMetrics = Array.from(sections).map(sec => {
+        const rect = sec.getBoundingClientRect();
+        return {
+          id: sec.getAttribute('id'),
+          top: rect.top + window.pageYOffset - 160,
+          bottom: rect.top + window.pageYOffset + sec.offsetHeight - 160
+        };
+      });
+    }
+
+    window.addEventListener('resize', updateSectionMetrics, { passive: true });
+    window.addEventListener('load', updateSectionMetrics, { passive: true });
+    setTimeout(updateSectionMetrics, 500);
+
+    window.addEventListener('scroll', () => {
+      if (!scrollTicking) {
+        window.requestAnimationFrame(() => {
+          const scrollY = window.pageYOffset;
+
+          // 1. Navbar scrolled class toggle
+          const shouldScroll = scrollY > 40;
+          if (shouldScroll !== isNavbarScrolled) {
+            isNavbarScrolled = shouldScroll;
+            if (navbar) navbar.classList.toggle('scrolled', isNavbarScrolled);
+          }
+
+          // 2. Active Section Spy (Desktop only where links are visible)
+          if (window.innerWidth >= 768 && sectionMetrics.length > 0) {
+            let current = '';
+            for (let i = 0; i < sectionMetrics.length; i++) {
+              const sm = sectionMetrics[i];
+              if (scrollY >= sm.top && scrollY < sm.bottom) {
+                current = sm.id;
+                break;
+              }
+            }
+
+            if (current && current !== currentActiveSection) {
+              currentActiveSection = current;
+              navItems.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+              });
+            }
+          }
+
+          scrollTicking = false;
+        });
+        scrollTicking = true;
+      }
+    }, { passive: true });
+
+    // Smooth Anchor Scroll & Auto-Close Mobile Menu
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const targetId = a.getAttribute('href');
+        if (targetId === '#') return;
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          const navOffset = window.innerWidth < 768 ? 70 : 90;
+          const top = target.getBoundingClientRect().top + window.pageYOffset - navOffset;
+          window.scrollTo({ top, behavior: 'smooth' });
+          
+          // Close mobile menu if open
+          const navLinksEl = document.getElementById('navLinks');
+          const navToggleEl = document.getElementById('navToggle');
+          if (navLinksEl && navLinksEl.classList.contains('open')) {
+            navLinksEl.classList.remove('open');
+            if (navToggleEl) {
+              navToggleEl.classList.remove('active');
+              navToggleEl.setAttribute('aria-expanded', 'false');
+            }
+          }
+        }
+      });
+    });
+
+    /* ──────────────────────────────────────────
+       6. MOBILE NAVIGATION DRAWER TOGGLE
+       ────────────────────────────────────────── */
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = navLinks.classList.toggle('open');
+        navToggle.classList.toggle('active', isOpen);
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!navbar.contains(e.target) && navLinks.classList.contains('open')) {
+          navLinks.classList.remove('open');
+          navToggle.classList.remove('active');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    /* ──────────────────────────────────────────
+       7. COUNTDOWN CLOCK
+       ────────────────────────────────────────── */
+    const weddingDate = new Date('2026-11-29T11:30:00+05:30').getTime();
+
+    function updateCountdown() {
+      const diff = weddingDate - Date.now();
+      if (diff <= 0) {
+        ['cd-days','cd-hours','cd-minutes','cd-seconds'].forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.textContent = '00';
+        });
+        return;
+      }
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+
+      const pad = n => String(n).padStart(2, '0');
+      const elDays = document.getElementById('cd-days');
+      const elHours = document.getElementById('cd-hours');
+      const elMins = document.getElementById('cd-minutes');
+      const elSecs = document.getElementById('cd-seconds');
+
+      if (elDays && elDays.textContent !== pad(d)) elDays.textContent = pad(d);
+      if (elHours && elHours.textContent !== pad(h)) elHours.textContent = pad(h);
+      if (elMins && elMins.textContent !== pad(m)) elMins.textContent = pad(m);
+      if (elSecs && elSecs.textContent !== pad(s)) elSecs.textContent = pad(s);
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    /* ──────────────────────────────────────────
+       8. INTERSECTION OBSERVER (SMOOTH SCROLL REVEALS)
+       ────────────────────────────────────────── */
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    /* ──────────────────────────────────────────
+       9. TOAST HELPER
+       ────────────────────────────────────────── */
+    function showToast(msg) {
+      if (!toast) return;
+      toast.textContent = msg;
+      toast.classList.add('visible');
+      setTimeout(() => toast.classList.remove('visible'), 2800);
+    }
+
+    /* ──────────────────────────────────────────
+       10. AMBIENT CURSOR GLOW (Hardware Accelerated 3D Transform)
+       ────────────────────────────────────────── */
+    const cursorGlow = document.getElementById('cursorGlow');
+    if (window.matchMedia('(pointer: fine)').matches && cursorGlow) {
+      cursorGlow.style.opacity = '1';
+      let glowTicking = false;
+      window.addEventListener('mousemove', e => {
+        if (!glowTicking) {
+          window.requestAnimationFrame(() => {
+            cursorGlow.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`;
+            glowTicking = false;
+          });
+          glowTicking = true;
+        }
+      }, { passive: true });
+    }
+
+    /* ──────────────────────────────────────────
+       11. 3D CARD PERSPECTIVE TILT (Desktop Only)
+       ────────────────────────────────────────── */
+    if (window.matchMedia('(pointer: fine)').matches) {
+      document.querySelectorAll('.couple-person-card, .details-card, .venue-card, .countdown-wrapper, .verse-card, .invitation-card').forEach(card => {
+        let cardTicking = false;
+        card.addEventListener('mousemove', e => {
+          if (!cardTicking) {
+            window.requestAnimationFrame(() => {
+              const rect = card.getBoundingClientRect();
+              const x = e.clientX - rect.left - rect.width / 2;
+              const y = e.clientY - rect.top - rect.height / 2;
+              card.style.transform = `perspective(1000px) rotateX(${-y * 0.012}deg) rotateY(${x * 0.012}deg) translateY(-4px)`;
+              cardTicking = false;
+            });
+            cardTicking = true;
+          }
+        }, { passive: true });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = '';
+        });
+      });
+    }
+
+    // Dynamic absolute URL resolution for Open Graph scrapers
+    if (window.location.protocol.startsWith('http')) {
+      const origin = window.location.origin + window.location.pathname.replace(/index\.html$/, '');
+      const absThumb = origin.replace(/\/$/, '') + '/assets/og-thumbnail.jpg';
+      const ogImg = document.querySelector('meta[property="og:image"]');
+      const ogSec = document.querySelector('meta[property="og:image:secure_url"]');
+      const twImg = document.querySelector('meta[name="twitter:image"]');
+      const ogUrl = document.querySelector('meta[property="og:url"]');
+      if (ogImg) ogImg.setAttribute('content', absThumb);
+      if (ogSec) ogSec.setAttribute('content', absThumb);
+      if (twImg) twImg.setAttribute('content', absThumb);
+      if (ogUrl) ogUrl.setAttribute('content', window.location.href);
+    }
+  </script>
+
+</body>
+</html>
